@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --green: #017143;
+  --black: #333;
+}
+section {
+  position: relative;
+
+  max-width: 100%;
+  display: flex;
+  min-height: 100vh;
+  padding: 100px;
+  align-items: center;
+
+  justify-content: space-between;
+  background: #fff;
+}
+header {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  padding: 20px 100px;
+  width: 100%;
+  align-items: center;
+}
+header img {
+  max-width: 80px;
+  position: relative;
+}
+ul {
+  position: relative;
+  display: flex;
+}
+ul li {
+  list-style: none;
+}
+ul li a {
+  display: inline-block;
+  color: var(--black);
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.text {
+  position: relative;
+  max-width: 600px;
+}
+h2 {
+  font-size: 4em;
+  line-height: 1.4em;
+  font-weight: 500;
+  color: var(--black);
+}
+span {
+  font-weight: bold;
+  color: var(--green);
+  line-height: 1.2em;
+}
+p {
+  color: var(--black);
+}
+
+#button {
+  display: inline-block;
+  background-color: var(--green);
+  text-decoration: none;
+  color: #fff;
+  padding: 6px 19px;
+  border-radius: 25px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  margin-top: 20px;
+}
+.str-box-img {
+  width: 600px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 50px;
+  padding-top: 20px;
+}
+.str-box-img img {
+  width: 300px;
+}
+.thumb {
+  position: absolute;
+  display: flex;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+.thumb li {
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.thumb li img {
+  max-width: 65px;
+  transition: 0.5s;
+}
+.thumb li img:hover {
+  transform: translateY(15px);
+}
+.circle {
+  width: 100%;
+  background: #017143;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  clip-path: circle(600px at right 800px);
+}

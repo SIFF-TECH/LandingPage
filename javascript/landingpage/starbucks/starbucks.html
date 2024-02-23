@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="starbucks.css" />
+    <title>Starbucks</title>
+  </head>
+  <body>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="assets/logo.png" alt="" /></a>
+        <ul>
+          <li><a href="">Home</a></li> 
+          <li><a href="">Menu</a></li>
+          <li><a href="">What's ne</a>w</li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </header>
+      <div class="content">
+        <div class="text">
+          <h2>It's not jsut a coffe it's <span>STARBUCKS</span></h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate
+            tenetur adipisci rem, culpa, laudantium pariatur deleniti
+            perspiciatis explicabo facere eius unde quod enim incidunt
+            distinctio accusantium ipsam odit beatae voluptatum?
+          </p>
+          <a href="#" id="button">learn more</a>
+        </div>
+        <div class="str-box-img">
+          <img class="img" src="assets/img1.png" alt="" />
+        </div>
+      </div>
+
+      <ul class="thumb">
+        <li>
+          <img
+            src="assets/thumb1.png"
+            onclick="imgslider('assets/img1.png') ;colorslider('#017143')"
+          />
+        </li>
+        <li>
+          <img
+            src="assets/thumb2.png"
+            onclick="imgslider('assets/img2.png');colorslider('#eb7495')"
+          />
+        </li>
+        <li>
+          <img
+            src="assets/thumb3.png"
+            onclick="imgslider('assets/img3.png');colorslider('#d752b1')"
+          />
+        </li>
+      </ul>
+    </section>
+
+    <script type="text/javascript">
+      function imgslider(anything) {
+        document.querySelector(".img").src = anything;
+      }
+
+      function colorslider(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
+  </body>
+</html>
